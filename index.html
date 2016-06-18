@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="author" content="Anirudh Goel" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Academistic</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<h1>Details</h1>
+		<br><br><br><br><br>
+		<input type="text" id="name" class="input input-lg" placeholder="Name" onkeypress="checkEnter(event)"></input>
+		<br><br>
+		<input type="text" id="mobile" class="input input-lg" placeholder="Mobile" onkeypress="checkEnter(event)"></input>
+		<br><br>
+		<input type="text" id="email" class="input input-lg" placeholder="E-Mail" onkeypress="checkEnter(event)"></input>
+		
+		<br><br><br><br>
+
+		<input type="submit" onclick="input()" class="btn btn-lg btn-success" value="Submit"></input>
+	</div>
+	<br>
+	<div id="result"></div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</html>
