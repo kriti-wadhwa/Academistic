@@ -14,20 +14,13 @@ h1 {
 	text-shadow: 5px 5px 5px #000000;
 	color: white;
 }
+#mobile, #email, .btn {
+	display: none;
+}
 .input {
 	text-align: center;
 	color: black;
 	width: 275px;
-}
-.loader {
-	display: none;
-	position: fixed;
-	left: 25%;
-	top: 25%;
-	width: 50%;
-	height: 60%;
-	z-index: 9999;
-	background: url("../img/preloader.gif") center no-repeat #ffffff;
 }
 #result {
 	font-size: 32px;

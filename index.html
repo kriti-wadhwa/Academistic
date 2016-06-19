@@ -13,15 +13,15 @@
 	<div class="container-fluid">
 		<h1>Details</h1>
 		<br><br><br><br><br>
-		<input type="text" id="name" class="input input-lg" placeholder="Name" onkeypress="checkEnter(event)"></input>
+		<input type="text" id="name" class="input input-lg" placeholder="Name" onkeypress="checkEnter(event);" onkeyup="display();"></input>
 		<br><br>
-		<input type="text" id="mobile" class="input input-lg" placeholder="Mobile" onkeypress="checkEnter(event)"></input>
+		<input type="text" id="mobile" class="input input-lg" placeholder="Mobile" onkeypress="checkEnter(event);" onkeyup="display();"></input>
 		<br><br>
-		<input type="text" id="email" class="input input-lg" placeholder="E-Mail" onkeypress="checkEnter(event)"></input>
+		<input type="text" id="email" class="input input-lg" placeholder="E-Mail" onkeypress="checkEnter(event);" onkeyup="display();"></input>
 		
 		<br><br><br><br>
 
-		<input type="submit" onclick="input()" class="btn btn-lg btn-success" value="Submit"></input>
+		<input type="submit" onclick="input();" class="btn btn-lg btn-success" value="Submit" id="submit"></input>
 	</div>
 	<br>
 	<div id="result"></div>

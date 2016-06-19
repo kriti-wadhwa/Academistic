@@ -1,3 +1,32 @@
+function display() {
+	if(document.getElementById('name').value != "") {
+		$("#mobile").fadeIn("fast", function() {
+			if(document.getElementById('mobile').value != "") {
+				$("#email").fadeIn("fast", function() {
+					if(document.getElementById('email').value != "") {
+						$("#submit").fadeIn("fast");
+					}
+					else {
+						$("#submit").fadeOut("fast");
+					}
+				});
+			}
+			else {
+				$("#submit").fadeOut("fast", function() {
+					$("#email").fadeOut("fast");
+				});
+			}
+		});
+	}
+	else {
+		$("#submit").fadeOut("fast", function() {
+			$("#email").fadeOut("fast", function() {
+				$("#mobile").fadeOut("fast");
+			});
+		});
+	}
+}
+
 function checkEnter(event) {
 	if(event.keyCode === 13) {
 		input();
